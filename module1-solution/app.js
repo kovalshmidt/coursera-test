@@ -22,7 +22,18 @@
         }
     }
 
-    
-    
-    
+    var Dog = function(breed){
+        this.breed = breed;
+        this.bark = function(){
+            return breed + " barks";
+        }
+    };
+
+    var pitbull = new Dog("pitbull");
+    console.log("pitbull.breed: " + pitbull.breed);
+    console.log("pitbull.bark: " + pitbull.bark());
+
+    var dobermann = new Dog("dobermann");
+    console.log("dobermann.breed: " + dobermann.breed);
+    console.log("dobermann.bark: " + dobermann.bark());
 })();
